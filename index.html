@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Polypall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("https://i.postimg.cc/J4kbZbfm/bg.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+
+    .overlay {
+      width: 100%;
+      min-height: 100vh;
+      background: rgba(0,0,0,0.35);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 0 0 20px black;
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-size: 3rem;
+      text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+    }
+
+    .tagline {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      text-shadow:
+        -1.5px -1.5px 0 #000,
+         1.5px -1.5px 0 #000,
+        -1.5px  1.5px 0 #000,
+         1.5px  1.5px 0 #000;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.55);
+      border-radius: 18px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.9);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      border: 2px solid white;
+    }
+
+    .card h2 {
+      margin: 8px 0;
+      font-size: 1.4rem;
+      text-shadow:
+        -1.5px -1.5px 0 #000,
+         1.5px -1.5px 0 #000,
+        -1.5px  1.5px 0 #000,
+         1.5px  1.5px 0 #000;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 18px;
+      border-radius: 25px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .card a:hover {
+      background: #ddd;
+    }
+
+    footer {
+      margin-top: 50px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+      text-shadow: 1px 1px 2px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+
+    <!-- LOGO -->
+    <img class="logo" src="https://i.postimg.cc/W3V2QG5t/In-Shot-20251108-192211830.jpg" alt="Polypall Logo"/>
+
+    <h1>polypall</h1>
+
+    <p class="tagline">
+      Apps and websites built to connect people, and help end the loneliness epidemic.
+    </p>
+
+    <!-- APP CARDS -->
+    <section class="apps">
+
+      <div class="card">
+        <img src="https://placehold.co/400x300/png" alt="App 1"/>
+        <h2> Tech-Connect, the site for Inventors & Investors.</h2>
+        <a href="https://yourlinkhere.com" target="_blank">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/400x300/png" alt="App 2"/>
+        <h2>SimpCAD, the site for those who struggle learning CAD software.</h2>
+        <a href="https://yourlinkhere.com" target="_blank">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/400x300/png" alt="App 3"/>
+        <h2>A-Neruo-Network, the community for neurodivergent folks.</h2>
+        <a href="https://yourlinkhere.com" target="_blank">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/400x300/png" alt="App 4"/>
+        <h2>Perfect PPl, the dating site for disabled folks.</h2>
+        <a href="https://yourlinkhere.com" target="_blank">Visit</a>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Polypall. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
 
